@@ -1,0 +1,328 @@
+
+# 1 "../fire.c"
+
+# 4 "/Applications/microchip/xc8/v1.32/include/stdlib.h"
+typedef int ptrdiff_t;
+typedef unsigned size_t;
+typedef unsigned short wchar_t;
+
+# 16
+extern int errno;
+
+# 27
+typedef struct {
+int rem;
+int quot;
+} div_t;
+typedef struct {
+unsigned rem;
+unsigned quot;
+} udiv_t;
+typedef struct {
+long quot;
+long rem;
+} ldiv_t;
+typedef struct {
+unsigned long quot;
+unsigned long rem;
+} uldiv_t;
+
+# 65
+extern double atof(const char *);
+extern double strtod(const char *, const char **);
+extern int atoi(const char *);
+extern unsigned xtoi(const char *);
+extern long atol(const char *);
+extern long strtol(const char *, char **, int);
+
+extern int rand(void);
+extern void srand(unsigned int);
+extern void * calloc(size_t, size_t);
+extern div_t div(int numer, int denom);
+extern udiv_t udiv(unsigned numer, unsigned denom);
+extern ldiv_t ldiv(long numer, long denom);
+extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+extern unsigned int _rotl(unsigned int value, unsigned int shift);
+extern unsigned int _rotr(unsigned int value, unsigned int shift);
+
+
+
+
+extern void * malloc(size_t);
+extern void free(void *);
+extern void * realloc(void *, size_t);
+
+extern void abort(void);
+extern void exit(int);
+extern int atexit(void (*)(void));
+extern char * getenv(const char *);
+extern char ** environ;
+extern int system(char *);
+extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+extern int abs(int);
+extern long labs(long);
+
+
+extern char * itoa(char * buf, int val, int base);
+extern char * utoa(char * buf, unsigned val, int base);
+
+
+
+
+extern char * ltoa(char * buf, long val, int base);
+extern char * ultoa(char * buf, unsigned long val, int base);
+
+extern char * ftoa(float f, int * status);
+
+# 3 "/Applications/microchip/xc8/v1.32/include/math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double);
+extern double cos(double);
+extern double tan(double);
+extern double asin(double);
+extern double acos(double);
+extern double atan(double);
+extern double atan2(double, double);
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double);
+extern double exp(double);
+extern double sinh(double);
+extern double cosh(double);
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
+
+# 15 "../include/main.h"
+void matrixTest(void);
+void bitmapTest(void);
+void bitmapPutPixel(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char);
+void bitmapGetPixel(unsigned char x, unsigned char y, unsigned char *, unsigned char *, unsigned char *);
+void bitmapDrawChar(signed char, signed char, unsigned char, unsigned char, unsigned char, unsigned char);
+void bitmapClear(void);
+void showTime(void);
+void setTime(void);
+
+# 15 "../include/fire.h"
+void HSVtoRGB(void *vRGB, void *vHSV);
+void setPixel(unsigned char x, unsigned char y, unsigned char colorR, unsigned char colorG, unsigned char colorB);
+void generateLine(void);
+void shiftUp(void);
+void drawFrame(int pcnt);
+void setup(void);
+void HSL_to_RGB(unsigned int hue, unsigned int sat, unsigned int lum, unsigned int* r, unsigned int* g, unsigned int* b);
+
+# 10 "../fire.c"
+typedef struct
+{
+unsigned char r;
+unsigned char g;
+unsigned char b;
+} ColorRGB;
+
+
+typedef struct
+{
+unsigned char h;
+unsigned char s;
+unsigned char v;
+} ColorHSV;
+
+
+const unsigned char valueMask[8][8]={
+{32 , 0 , 0 , 0 , 0 , 0 , 0 , 32 },
+{64 , 0 , 0 , 0 , 0 , 0 , 0 , 64 },
+{96 , 32 , 0 , 0 , 0 , 0 , 32 , 96 },
+{128, 64 , 32 , 0 , 0 , 32 , 64 , 128},
+{160, 96 , 64 , 32 , 32 , 64 , 96 , 160},
+{192, 128, 96 , 64 , 64 , 96 , 128, 192},
+{255, 160, 128, 96 , 96 , 128, 160, 255},
+{255, 192, 160, 128, 128, 160, 192, 255}
+};
+
+
+
+const unsigned char hueMask[8][8]={
+{1, 4, 7, 9, 9, 8, 4, 1},
+{1, 3, 5, 7, 9, 7, 3, 1},
+{1, 3, 5, 6, 7, 6, 3, 1},
+{1, 2, 4, 5, 5, 5, 2, 1},
+{1, 2, 4, 4, 4, 4, 2, 1},
+{0, 1, 2, 3, 3, 2, 1, 0},
+{0, 0, 1, 2, 2, 1, 0, 0},
+{0, 0, 0, 1, 1, 0, 0, 0}
+};
+
+unsigned char matrix[8][8];
+unsigned char line[8];
+
+
+
+
+void HSVtoRGB(void *vRGB, void *vHSV)
+{
+ColorRGB *colorRGB=(ColorRGB *)vRGB;
+ColorHSV *colorHSV=(ColorHSV *)vHSV;
+
+float r, g, b, h, s, v;
+float f, p, q, t;
+int i;
+
+h = (float)(colorHSV->h / 256.0);
+s = (float)(colorHSV->s / 256.0);
+v = (float)(colorHSV->v / 256.0);
+
+
+if(s == 0.0) {
+b = v;
+g = b;
+r = g;
+}
+
+else
+{
+h *= 6.0;
+i = (int)(floor(h));
+f = h - i;
+
+p = (float)(v * (1.0 - s));
+q = (float)(v * (1.0 - (s * f)));
+t = (float)(v * (1.0 - (s * (1.0 - f))));
+
+switch(i)
+{
+case 0: r=v; g=t; b=p; break;
+case 1: r=q; g=v; b=p; break;
+case 2: r=p; g=v; b=t; break;
+case 3: r=p; g=q; b=v; break;
+case 4: r=t; g=p; b=v; break;
+case 5: r=v; g=p; b=q; break;
+default: r = g = b = 0; break;
+}
+}
+
+colorRGB->r = (int)(r * 255.0);
+colorRGB->g = (int)(g * 255.0);
+colorRGB->b = (int)(b * 255.0);
+
+# 112
+}
+
+void HSL_to_RGB(unsigned int hue, unsigned int sat, unsigned int lum, unsigned int* r, unsigned int* g, unsigned int* b)
+{
+unsigned int v;
+
+v = (lum < 128) ? (lum * (256 + sat)) >> 8 :
+(((lum + sat) << 8) - lum * sat) >> 8;
+if (v <= 0) {
+*r = *g = *b = 0;
+} else {
+int m;
+int sextant;
+int fract, vsf, mid1, mid2;
+
+m = lum + lum - v;
+hue *= 6;
+sextant = hue >> 8;
+fract = hue - (sextant << 8);
+vsf = v * fract * (v - m) / v >> 8;
+mid1 = m + vsf;
+mid2 = v - vsf;
+switch (sextant) {
+case 0: *r = v; *g = mid1; *b = m; break;
+case 1: *r = mid2; *g = v; *b = m; break;
+case 2: *r = m; *g = v; *b = mid1; break;
+case 3: *r = m; *g = mid2; *b = v; break;
+case 4: *r = mid1; *g = m; *b = v; break;
+case 5: *r = v; *g = m; *b = mid2; break;
+}
+}
+}
+
+void setPixel(unsigned char x, unsigned char y, unsigned char colorR, unsigned char colorG, unsigned char colorB){
+
+bitmapPutPixel(8-y-1, x, colorR, colorG, colorB);
+}
+
+# 153
+void generateLine(){
+for(unsigned char x=0;x<8;x++) {
+line[x] = rand()%63;
+}
+}
+
+# 162
+void shiftUp(){
+ColorRGB colorRGB;
+
+for (unsigned char y=8-1;y>0;y--) {
+for(unsigned char x=0;x<8;x++) {
+matrix[x][y] = matrix[x][y-1];
+}
+}
+
+for(unsigned char x=0;x<8;x++) {
+matrix[x][0] = line[x];
+}
+}
+
+# 180
+void drawFrame(int pcnt){
+ColorRGB colorRGB;
+ColorHSV colorHSV;
+int nextv;
+
+
+for (unsigned char y=8-1;y>0;y--) {
+for (unsigned char x=0;x<8;x++) {
+colorHSV.h = hueMask[y][x];
+colorHSV.s = 255;
+nextv =
+(((100-pcnt)*matrix[x][y]
++ pcnt*matrix[x][y-1])/100)
+- valueMask[y][x];
+colorHSV.v = (unsigned char)(((0) > (nextv)) ? (0) : (nextv));
+
+HSVtoRGB(&colorRGB, &colorHSV);
+setPixel(x, y, colorRGB.r, colorRGB.g, colorRGB.b);
+
+}
+}
+
+
+for(unsigned char x=0;x<8;x++) {
+colorHSV.h = hueMask[0][x];
+colorHSV.s = 255;
+colorHSV.v = (unsigned char)(((100-pcnt)*matrix[x][0] + pcnt*line[x])/100);
+
+HSVtoRGB(&colorRGB, &colorHSV);
+setPixel(x, 0, colorRGB.r, colorRGB.g, colorRGB.b);
+
+}
+}
+
+void setup()
+{
+srand(12345);
+generateLine();
+
+
+for (unsigned char y=0;y<8;y++) {
+for(unsigned char x=0;x<8;x++) {
+matrix[x][y] = 0;
+}
+}
+}
+

@@ -1,0 +1,1528 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgtY7dx9C.obj
+end_init CODE 0 121 121 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production/flameSimulator.X.production.obj
+cinit CODE 0 123 123 30 2
+intentry CODE 0 4 4 11D 2
+swtext3 CONST 0 1080 1080 10 2
+text31 CODE 0 16E9 16E9 6 2
+text30 CODE 0 179C 179C 30 2
+text29 CODE 0 A25 A25 56 2
+text28 CODE 0 1709 1709 12 2
+text27 CODE 0 8F5 8F5 48 2
+text26 CODE 0 16FB 16FB E 2
+text25 CODE 0 A7B A7B 59 2
+text24 CODE 0 1776 1776 26 2
+text23 CODE 0 17CC 17CC 34 2
+text22 CODE 0 B35 B35 83 2
+text21 CODE 0 9D1 9D1 54 2
+text20 CODE 0 985 985 4C 2
+text19 CODE 0 495 495 1FA 2
+text18 CODE 0 AD4 AD4 61 2
+text17 CODE 0 1754 1754 22 2
+text16 CODE 0 CC4 CC4 A9 2
+text15 CODE 0 D6D D6D B4 2
+text14 CODE 0 801 801 9 2
+text13 CODE 0 171B 171B 1B 2
+text12 CODE 0 8B8 8B8 3D 2
+text11 CODE 0 68F 68F F6 2
+text10 CODE 0 840 840 3C 2
+text9 CODE 0 C3D C3D 87 2
+text8 CODE 0 80A 80A 36 2
+text7 CODE 0 BB8 BB8 85 2
+swtext2 CONST 0 109C 109C C 2
+text6 CODE 0 153 153 342 2
+text5 CODE 0 1736 1736 1E 2
+text4 CODE 0 7E6 7E6 1A 2
+text3 CODE 0 E21 E21 1DF 2
+text2 CODE 0 785 785 61 2
+text1 CODE 0 87C 87C 3C 2
+swtext1 CONST 0 1090 1090 C 2
+maintext CODE 0 93D 93D 48 2
+cstackBANK0 BANK0 1 20 20 50 1
+cstackCOMMON COMMON 1 70 70 9 1
+cstackBANK1 BANK1 1 A0 A0 4A 1
+cstackBANK2 BANK2 1 134 134 D 1
+clrtext CODE 0 16EF 16EF C 2
+bssBANK3 BANK3 1 1A0 1A0 40 1
+bssBANK2 BANK2 1 120 120 14 1
+bssBANK1 BANK1 1 EA EA 6 1
+bssCOMMON COMMON 1 79 79 4 1
+bitbssCOMMON COMMON 1 3E8 7D 1 1
+stringtext STRCODE 0 1000 1000 80 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK10 00520-0052F 1
+BANK2 00141-0016F 1
+BANK3 001E0-001EF 1
+BANK4 00220-0026F 1
+BANK5 002A0-002EF 1
+BANK6 00320-0036F 1
+BANK7 003A0-003EF 1
+BANK8 00420-0046F 1
+BANK9 004A0-004EF 1
+BIGRAM 02000-023EF 1
+CODE 00002-00003 2
+CODE 00800-00800 2
+CODE 010A8-016E8 2
+CODE 01800-03FFF 2
+CONST 00002-00003 2
+CONST 00800-00800 2
+CONST 010A8-016E8 2
+CONST 01800-03FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00002-00003 2
+ENTRY 00800-00800 2
+ENTRY 010A8-016E8 2
+ENTRY 01800-03FFF 2
+IDLOC 08000-08003 2
+RAM 00141-0016F 1
+RAM 001E0-001EF 1
+RAM 00220-0026F 1
+RAM 002A0-002EF 1
+RAM 00320-0036F 1
+RAM 003A0-003EF 1
+RAM 00420-0046F 1
+RAM 004A0-004EF 1
+RAM 00520-0052F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0051F 1
+SFR11 00580-0059F 1
+SFR12 00600-0061F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-0019F 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0021F 1
+SFR5 00280-0029F 1
+SFR6 00300-0031F 1
+SFR7 00380-0039F 1
+SFR8 00400-0041F 1
+SFR9 00480-0049F 1
+STACK 02130-0231F 1
+STRCODE 00002-00003 2
+STRCODE 00800-00800 2
+STRCODE 010A8-016E8 2
+STRCODE 01800-03FFF 2
+STRING 00002-00003 2
+STRING 00800-00800 2
+STRING 010A8-016E8 2
+STRING 01800-03FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/flameSimulator.X.production.obj
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":333 4 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":974 4 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":335 9 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":338 C intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":343 F intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":345 14 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":347 1E intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":349 1F intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":351 29 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":353 2A intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":355 34 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":358 35 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":360 39 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":361 3B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":362 3D intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":343 3F intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":370 47 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":376 50 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":377 53 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":378 55 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":381 57 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":383 58 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":384 58 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":385 5A intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":387 5B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":388 5B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":389 5D intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":391 5E intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":392 5E intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":393 60 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":395 61 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":396 61 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":397 63 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":399 64 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":400 64 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":401 66 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":403 67 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":404 67 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":405 69 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":407 6A intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":408 6A intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":409 6C intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":411 6D intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":412 6D intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":417 6F intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":381 70 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":419 7A intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":420 7E intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":422 81 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":426 82 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":428 86 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":431 87 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":432 8B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":434 8E intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":438 8F intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":439 92 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":442 93 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":448 99 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":449 A2 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":451 B4 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":453 BD intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":457 BE intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":459 C6 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":460 C7 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":461 CB intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":462 D1 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":466 D9 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":469 DB intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":471 E1 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":474 E6 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":477 E8 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":479 EB intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":488 EF intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":492 F4 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":496 F4 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":501 F8 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":481 F9 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":502 108 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":505 108 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":518 10B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":520 110 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":532 114 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":536 117 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":547 119 intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":548 11B intentry CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":550 11C intentry CODE
+"/tmp/cgtJQk2Gu":1293 123 cinit CODE
+"/tmp/cgtJQk2Gu":1296 123 cinit CODE
+"/tmp/cgtJQk2Gu":1392 123 cinit CODE
+"/tmp/cgtJQk2Gu":1393 124 cinit CODE
+"/tmp/cgtJQk2Gu":1394 125 cinit CODE
+"/tmp/cgtJQk2Gu":1395 126 cinit CODE
+"/tmp/cgtJQk2Gu":1396 127 cinit CODE
+"/tmp/cgtJQk2Gu":1397 128 cinit CODE
+"/tmp/cgtJQk2Gu":1398 129 cinit CODE
+"/tmp/cgtJQk2Gu":1399 12A cinit CODE
+"/tmp/cgtJQk2Gu":1400 12B cinit CODE
+"/tmp/cgtJQk2Gu":1404 12E cinit CODE
+"/tmp/cgtJQk2Gu":1408 12F cinit CODE
+"/tmp/cgtJQk2Gu":1409 130 cinit CODE
+"/tmp/cgtJQk2Gu":1410 131 cinit CODE
+"/tmp/cgtJQk2Gu":1411 132 cinit CODE
+"/tmp/cgtJQk2Gu":1415 133 cinit CODE
+"/tmp/cgtJQk2Gu":1416 134 cinit CODE
+"/tmp/cgtJQk2Gu":1417 135 cinit CODE
+"/tmp/cgtJQk2Gu":1418 136 cinit CODE
+"/tmp/cgtJQk2Gu":1419 137 cinit CODE
+"/tmp/cgtJQk2Gu":1420 138 cinit CODE
+"/tmp/cgtJQk2Gu":1421 139 cinit CODE
+"/tmp/cgtJQk2Gu":1425 13A cinit CODE
+"/tmp/cgtJQk2Gu":1426 13B cinit CODE
+"/tmp/cgtJQk2Gu":1427 13C cinit CODE
+"/tmp/cgtJQk2Gu":1428 13D cinit CODE
+"/tmp/cgtJQk2Gu":1429 13E cinit CODE
+"/tmp/cgtJQk2Gu":1430 13F cinit CODE
+"/tmp/cgtJQk2Gu":1431 140 cinit CODE
+"/tmp/cgtJQk2Gu":1432 141 cinit CODE
+"/tmp/cgtJQk2Gu":1433 142 cinit CODE
+"/tmp/cgtJQk2Gu":1437 145 cinit CODE
+"/tmp/cgtJQk2Gu":1438 146 cinit CODE
+"/tmp/cgtJQk2Gu":1439 147 cinit CODE
+"/tmp/cgtJQk2Gu":1440 148 cinit CODE
+"/tmp/cgtJQk2Gu":1441 149 cinit CODE
+"/tmp/cgtJQk2Gu":1442 14A cinit CODE
+"/tmp/cgtJQk2Gu":1443 14B cinit CODE
+"/tmp/cgtJQk2Gu":1444 14C cinit CODE
+"/tmp/cgtJQk2Gu":1445 14D cinit CODE
+"/tmp/cgtJQk2Gu":1451 14F cinit CODE
+"/tmp/cgtJQk2Gu":1452 14F cinit CODE
+"/tmp/cgtJQk2Gu":1453 150 cinit CODE
+"/tmp/cgtJQk2Gu":1454 151 cinit CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":56 153 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":58 155 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":59 15B text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":65 161 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":66 187 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":67 1AD text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":70 1D4 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":71 1D9 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":78 1DF text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":79 201 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":80 233 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":82 26B text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":83 2AB text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":84 313 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":86 393 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":88 394 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":89 3A0 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":90 3B2 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":91 3C4 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":92 3D0 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":93 3E2 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":94 3F5 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":95 407 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":86 408 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":98 417 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":99 440 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":100 46A text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":112 494 text6 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":695 495 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":702 495 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":703 49A text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":706 49C text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":707 4A0 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":710 4A6 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":713 4A7 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":714 4AA text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":715 4AC text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":720 4AD text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":722 4B5 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":724 4B8 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":725 4BF text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":726 4C2 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":728 4C9 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":731 4CE text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":733 4D0 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":734 4D7 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":735 4DA text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":737 4E1 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":738 4E6 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":740 4E7 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":742 4E9 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":743 4F0 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":744 4F3 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":746 4FA text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":747 4FF text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":750 501 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":752 504 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":755 505 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":756 50C text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":759 510 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":760 516 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":761 524 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":762 529 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":765 52A text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":766 531 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":769 535 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":770 53B text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":771 549 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":776 54E text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":752 54F text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":780 55C text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":781 55F text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":782 574 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":784 588 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":786 592 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":788 597 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":789 5AC text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":793 5BF text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":794 5D5 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":784 5EC text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":798 5F2 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":800 5FD text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":802 602 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":803 618 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":807 62B text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":808 642 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":798 659 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":813 65F text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":829 66D text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":830 670 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":831 673 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":834 675 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":837 67C text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":838 680 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":839 685 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":718 686 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":847 686 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":850 687 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":851 689 text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":852 68C text19 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":853 68E text19 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":86 68F text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":90 68F text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":91 69C text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":92 6A8 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":93 6B7 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":94 6BE text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":96 6CD text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":97 6D1 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":98 6D2 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":99 6D3 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":100 6D4 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":101 6D5 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":102 6D6 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":103 6DC text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":104 6DD text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":106 6E3 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":110 6E7 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":111 6ED text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":112 6EF text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":114 6FA text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":115 700 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":113 704 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":117 709 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":121 70D text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":122 713 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":123 715 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":125 720 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":126 726 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":124 72A text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":129 72E text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":131 730 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":132 736 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":134 740 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":136 742 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":137 748 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":139 752 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":140 753 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":141 759 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":142 75B text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":143 761 text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":144 76B text11 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftadd.c":146 76D text11 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":162 785 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":165 785 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":166 78D text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":167 792 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":166 7BA text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":165 7C2 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":171 7C7 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":172 7CC text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":171 7E1 text2 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":145 7E6 text4 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":147 7E8 text4 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":148 7FF text4 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftneg.c":15 801 text14 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftneg.c":17 801 text14 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftneg.c":18 807 text14 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftneg.c":20 809 text14 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":254 80A text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":256 80A text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":257 810 text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":258 816 text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":261 817 text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":262 824 text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":263 831 text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":268 83A text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/frexp.c":269 83E text8 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":4 840 text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":6 840 text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":7 843 text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":8 857 text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":9 859 text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":10 86D text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":11 86F text10 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftge.c":12 871 text10 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":855 87C text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":864 87C text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":868 87F text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":871 882 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":874 883 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":876 885 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":878 88A text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":879 88F text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":880 892 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":881 895 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":883 897 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":884 8A1 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":886 8A6 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":876 8A9 text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":892 8AA text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":893 8AC text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":896 8AD text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":899 8AE text1 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":903 8B7 text1 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":42 8B8 text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":45 8B8 text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":46 8BA text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":47 8BE text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":48 8C0 text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":49 8CB text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":52 8CD text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":53 8D1 text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":54 8D8 text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":52 8DC text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/altoft.c":56 8DD text12 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":6 8F5 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":13 8F5 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":14 8F7 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":15 8F9 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":16 8FE text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":18 900 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":19 902 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":20 907 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":21 90B text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":22 90D text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":23 90F text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":24 914 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":22 918 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":27 919 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":28 921 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":29 925 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":30 92A text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":32 92E text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":33 931 text27 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awmod.c":34 936 text27 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":132 93D maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":135 93D maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":137 942 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":140 943 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":159 944 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":162 945 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":165 946 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":166 946 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":167 947 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":168 949 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":169 94C maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":171 94F maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":174 951 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":175 951 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":176 952 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":177 954 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":178 957 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":179 95A maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":180 960 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":182 961 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":184 961 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":186 963 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":189 964 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":195 96D maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":202 971 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":204 973 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":205 975 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":206 976 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":208 977 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":209 978 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":156 979 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":142 984 maintext CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":637 985 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":641 987 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":643 989 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":645 98D text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":646 991 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":643 995 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":649 996 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":650 997 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":652 99B text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":653 99F text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":650 9A3 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":656 9A4 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":657 9B4 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":658 9C4 text20 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":659 9D0 text20 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":6 9D1 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":14 9D1 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":15 9D3 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":16 9D5 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":17 9DA text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":19 9DC text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":20 9DE text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":21 9E3 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":23 9E7 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":24 9E9 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":25 9ED text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":26 9EF text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":27 9F1 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":28 9F6 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":26 9FA text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":31 9FB text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":32 A00 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":33 A08 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":34 A0C text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":36 A0D text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":37 A12 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":39 A16 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":40 A19 text21 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awdiv.c":41 A1E text21 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":175 A25 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":182 A25 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":186 A40 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":188 A48 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":194 A5C text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":198 A5C text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":196 A70 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":197 A71 text29 CODE
+"/Applications/microchip/microchip_solutions_v2013-06-15/Microchip/Common/TimeDelay.c":194 A7A text29 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":13 A7B text25 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":15 A7B text25 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":16 A7F text25 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":17 A87 text25 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":62 AD4 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":64 AD4 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":65 ADD text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":67 AE4 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":68 AE8 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":66 AEE text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":71 AF3 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":72 AF7 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":73 B01 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":70 B07 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":74 B07 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":76 B0C text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":77 B0E text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":75 B14 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":79 B16 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":80 B18 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":81 B1E text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":82 B20 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":83 B30 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":84 B33 text18 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/float.c":86 B34 text18 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":225 B35 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":229 B35 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":230 B38 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":233 B3A text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":234 B3D text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":235 B40 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":236 B43 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":237 B44 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":238 B46 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":239 B4E text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":240 B50 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":249 B51 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":253 B54 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":255 B5A text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":256 B5C text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":257 B5D text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":258 B5E text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":259 B61 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":260 B63 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":262 B65 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":263 B67 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":264 B68 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":265 B69 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":266 B6A text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":267 B6B text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":268 B6C text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":269 B6D text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":270 B6E text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":271 B70 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":272 B71 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":273 B72 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":274 B73 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":275 B74 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":276 B75 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":277 B76 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":280 B77 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":283 B7C text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":284 B7F text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":288 B81 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":289 B84 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":290 B87 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":291 B88 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":294 B89 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":295 B8B text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":296 B8D text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":297 B8F text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":300 B90 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":301 B92 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":302 B93 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":304 B95 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":305 B98 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":306 B9B text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":310 B9D text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":311 B9E text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":312 B9F text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":313 BA0 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":314 BA3 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":315 BA4 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":316 BA5 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":319 BA6 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":320 BA9 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":321 BAB text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":322 BAC text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":325 BAE text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":328 BB4 text22 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":330 BB6 text22 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":13 BB8 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":18 BB8 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":19 BC6 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":20 BC9 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":21 BDA text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":22 BE2 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":24 BEA text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":26 BF1 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":27 C0D text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":28 C1E text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/floor.c":29 C35 text7 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":44 C3D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":49 C3D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":50 C4D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":51 C56 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":52 C66 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":53 C67 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":54 C6D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":55 C74 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":56 C76 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":57 C78 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":58 C7D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":60 C86 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":61 C8D text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":63 C94 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":64 C98 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":66 CA1 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":67 CA8 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":65 CAA text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":70 CAD text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":71 CB0 text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/fttol.c":72 CBB text9 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":49 CC4 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":55 CC4 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":56 CD4 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":57 CDB text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":58 CEA text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":59 CF1 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":60 CF7 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":61 CFC text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":62 D0C text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":63 D1C text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":64 D20 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":65 D21 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":66 D27 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":67 D28 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":68 D2E text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":70 D32 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":71 D38 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":72 D44 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":73 D4A text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":75 D4B text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":76 D51 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/pic/ftdiv.c":77 D55 text16 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":62 D6D text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":67 D6D text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":68 D7D text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":69 D84 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":70 D93 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":71 D9A text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":72 D9F text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":73 DAF text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":74 DBF text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":75 DC3 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":77 DC4 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":78 DC5 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":79 DCB text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":134 DD1 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":136 DD5 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":137 DD7 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":138 DDD text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":139 DE3 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":140 DE9 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":143 DED text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":145 DF1 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":146 DF3 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":147 DF9 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":148 DFF text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":149 E05 text15 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/ftmul.c":156 E09 text15 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":180 E21 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":186 E21 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":187 E2A text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":188 E2F text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":189 E51 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":193 E57 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":194 F04 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":196 F15 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":197 F1F text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":187 F40 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":186 F4A text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":203 F4F text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":204 F54 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":205 F61 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":206 F67 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":208 FD3 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":209 FDD text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":203 FF9 text3 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":381 1080 swtext3 CONST
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":156 1090 swtext1 CONST
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":86 109C swtext2 CONST
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":970 16E9 text31 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":972 16E9 text31 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":973 16EC text31 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":974 16ED text31 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":973 16EE text31 CODE
+"/tmp/cgtJQk2Gu":1375 16EF clrtext CODE
+"/tmp/cgtJQk2Gu":1376 16EF clrtext CODE
+"/tmp/cgtJQk2Gu":1377 16F0 clrtext CODE
+"/tmp/cgtJQk2Gu":1378 16F0 clrtext CODE
+"/tmp/cgtJQk2Gu":1379 16F1 clrtext CODE
+"/tmp/cgtJQk2Gu":1380 16F2 clrtext CODE
+"/tmp/cgtJQk2Gu":1381 16F3 clrtext CODE
+"/tmp/cgtJQk2Gu":1382 16F4 clrtext CODE
+"/tmp/cgtJQk2Gu":1383 16F5 clrtext CODE
+"/tmp/cgtJQk2Gu":1384 16F6 clrtext CODE
+"/tmp/cgtJQk2Gu":1385 16F7 clrtext CODE
+"/tmp/cgtJQk2Gu":1386 16F8 clrtext CODE
+"/tmp/cgtJQk2Gu":1388 16F9 clrtext CODE
+"/tmp/cgtJQk2Gu":1387 16FA clrtext CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":7 16FB text26 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":9 16FB text26 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":10 1705 text26 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/rand.c":11 1708 text26 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":686 1709 text28 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":688 1709 text28 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":689 170B text28 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":691 170F text28 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/main.c":689 171A text28 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/lbtoft.c":27 171B text13 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/lbtoft.c":29 171D text13 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":15 1736 text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":43 1736 text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":45 1739 text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":46 173B text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":47 173F text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":48 1744 text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":49 1749 text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul16.c":52 174D text5 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":32 1754 text17 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":36 1754 text17 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":37 1756 text17 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":38 1758 text17 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":39 175D text17 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/awtoft.c":41 175F text17 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":153 1776 text24 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":154 1776 text24 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":155 177C text24 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":154 1797 text24 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":15 179C text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":119 179C text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":121 17A5 text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":122 17A7 text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":123 17AF text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":124 17B6 text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":125 17BD text30 CODE
+"/Applications/microchip/xc8/v1.32/sources/common/Umul32.c":128 17C3 text30 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":214 17CC text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":216 17CC text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":217 17D4 text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":220 17D7 text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":221 17DD text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":222 17E2 text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":221 17F3 text23 CODE
+"/Users/ufanders/Documents/GitHub/flameSimulator/firmware/fire.c":220 17FB text23 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_currentRefreshingPwmSweep 79 0 COMMON 1 bssCOMMON dist/default/production/flameSimulator.X.production.obj
+___awdiv@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___lbtoft@c 2F 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___altoft@c 5C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@v C9 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+setTime@i 46 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___awtoft@c 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__end_of___ftneg 1014 0 CODE 0 text14 dist/default/production/flameSimulator.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 1E0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hintentry 242 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production/flameSimulator.X.production.obj
+___ftadd@f1 31 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__end_of___awdiv 144A 0 CODE 0 text21 dist/default/production/flameSimulator.X.production.obj
+_isr 8 0 CODE 0 intentry dist/default/production/flameSimulator.X.production.obj
+__size_of_shiftUp 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+setTime@tempValue 47 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_TMR1 16 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR2 1A 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@colorRGB BB 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+_LATA 10C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_PEIE 5E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_LATD 10F 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_LATE 110 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of_init 1770 0 CODE 0 text22 dist/default/production/flameSimulator.X.production.obj
+_WPUB 20D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftneg@f1 2E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+setTime@currentFieldSelected 49 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_currentState EC 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+___ftadd@f2 34 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_rand 14F6 0 CODE 0 text25 dist/default/production/flameSimulator.X.production.obj
+_line 120 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+__end_of_shiftUp FCC 0 CODE 0 text2 dist/default/production/flameSimulator.X.production.obj
+_main 127A 0 CODE 0 maintext dist/default/production/flameSimulator.X.production.obj
+_ampm 3E8 -36B COMMON 1 bitbssCOMMON dist/default/production/flameSimulator.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/cgtY7dx9C.obj
+btemp 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_currentRefreshingRowIndex 7B 0 COMMON 1 bssCOMMON dist/default/production/flameSimulator.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_init 166A 0 CODE 0 text22 dist/default/production/flameSimulator.X.production.obj
+start 242 0 CODE 0 init /tmp/cgtY7dx9C.obj
+__end_of_bitmapClear 2E36 0 CODE 0 text28 dist/default/production/flameSimulator.X.production.obj
+?___ftadd 31 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___fttol@f1 4E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___ftmul@f1 3E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_frexp 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___fttol@lval 57 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___ftdiv@f1 33 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_IOCBF 396 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_IOCIE 5B 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_IOCIF 58 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+shiftUp@x 29 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_IOCBN 395 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtY7dx9C.obj
+_TRISD 8F 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_IOCBP 394 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TRISE 90 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_T1CON 18 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_T2CON 1C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+shiftUp@y 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__end_of_showTime 1170 0 CODE 0 text1 dist/default/production/flameSimulator.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftmul@f2 41 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_init 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_showTime 10F8 0 CODE 0 text1 dist/default/production/flameSimulator.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftdiv@f2 30 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+setTime@tempValueTens 3D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+?___ftneg 2E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___ftpack 15A8 0 CODE 0 text18 dist/default/production/flameSimulator.X.production.obj
+_bitmapClear 2E12 0 CODE 0 text28 dist/default/production/flameSimulator.X.production.obj
+?___awmod 33 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___ftdiv@f3 3B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+?_rand 2C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_randf EE 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+_srand 2DF6 0 CODE 0 text26 dist/default/production/flameSimulator.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__size_of_isr 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftge@ff1 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_setPixel FCC 0 CODE 0 text4 dist/default/production/flameSimulator.X.production.obj
+_errno 12C 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+_randx 128 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+_floor 1770 0 CODE 0 text7 dist/default/production/flameSimulator.X.production.obj
+_frexp 1014 0 CODE 0 text8 dist/default/production/flameSimulator.X.production.obj
+_setup 2F98 0 CODE 0 text23 dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@currentPixelPosition 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_hours 7C 0 COMMON 1 bssCOMMON dist/default/production/flameSimulator.X.production.obj
+___ftmul@cntr 4C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftdiv@cntr 3A 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+bitmapPutPixel@b 23 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_ADCON0 9D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_ADCON1 9E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftge@ff2 23 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__end_of_setPixel 1000 0 CODE 0 text4 dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@r 21 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_srand 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_OPTION_REG 95 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+?___fttol 4E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+?___ftmul 3E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_TMR0IE 5D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_LATBbits 10D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR1IE 488 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR2IE 489 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR0IF 5A 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_LATFbits 38C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/cgtY7dx9C.obj
+_TMR1IF 88 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_LATGbits 38D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TMR2IF 89 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+setTime@tempValueUnits 3F 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___lbtoft 2E36 0 CODE 0 text13 dist/default/production/flameSimulator.X.production.obj
+___altoft 1170 0 CODE 0 text12 dist/default/production/flameSimulator.X.production.obj
+_ANSELE 190 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+?___ftdiv 30 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+?___awdiv 26 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_ANSELF 40C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_ANSELG 40D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___awtoft 2EA8 0 CODE 0 text17 dist/default/production/flameSimulator.X.production.obj
+_ADRESH 9C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__size_of_HSVtoRGB 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+_drawFrame 1C42 0 CODE 0 text3 dist/default/production/flameSimulator.X.production.obj
+__Labs1 0 0 ABS 0 abs1 -
+setPixel@x 31 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_FVRCON 117 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftmul@f3_as_product 49 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__end_of_fastClock 2DDE 0 CODE 0 text31 dist/default/production/flameSimulator.X.production.obj
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+setPixel@y 29 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+isr@rowValueTempB 77 0 COMMON 1 cstackCOMMON dist/default/production/flameSimulator.X.production.obj
+isr@rowValueTempG 76 0 COMMON 1 cstackCOMMON dist/default/production/flameSimulator.X.production.obj
+isr@rowValueTempR 75 0 COMMON 1 cstackCOMMON dist/default/production/flameSimulator.X.production.obj
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+_newSecond 131 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+__end_of___ftpack 166A 0 CODE 0 text18 dist/default/production/flameSimulator.X.production.obj
+?___ftpack 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_showTime 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_updateDisplayRequest 133 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+_fastClock 2DD2 0 CODE 0 text31 dist/default/production/flameSimulator.X.production.obj
+_tmr1Value EA 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+floor@i 68 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of___awmod 127A 0 CODE 0 text27 dist/default/production/flameSimulator.X.production.obj
+___ftadd@sign 3B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__end_of_bitmapPutPixel 13A2 0 CODE 0 text20 dist/default/production/flameSimulator.X.production.obj
+srand@x 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+DelayMs@ms 2C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_valueMask 2080 0 STRCODE 0 stringtext dist/default/production/flameSimulator.X.production.obj
+___ftge 1080 0 CODE 0 text10 dist/default/production/flameSimulator.X.production.obj
+_drawFrame$728 134 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+floor@x 64 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+setup@x 40 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+setTime@tempHours 42 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+stackhi 231F 0 ABS 0 - /tmp/cgtY7dx9C.obj
+setup@y 3F 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_bitmap 2330 0 ABS 1 - dist/default/production/flameSimulator.X.production.obj
+___awmod@sign 39 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+stacklo 2130 0 ABS 0 - /tmp/cgtY7dx9C.obj
+___lmul 2F38 0 CODE 0 text30 dist/default/production/flameSimulator.X.production.obj
+__Hinit 242 0 CODE 0 init -
+__Linit 242 0 CODE 0 init -
+___wmul 2E6C 0 CODE 0 text5 dist/default/production/flameSimulator.X.production.obj
+__end_of_main 130A 0 CODE 0 maintext dist/default/production/flameSimulator.X.production.obj
+?_floor 64 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@x 26 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_matrix 1A0 0 BANK3 1 bssBANK3 dist/default/production/flameSimulator.X.production.obj
+___lmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftmul@sign 4D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+end_of_initialization 29E 0 CODE 0 cinit dist/default/production/flameSimulator.X.production.obj
+___ftdiv@sign 3F 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___awdiv@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___lmul@multiplicand 24 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+bitmapClear@i 21 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+setTime@tempMinutes 43 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__size_of___awtoft 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+drawFrame@nextv 136 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_IOCBFbits 396 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+drawFrame@x 13A 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+__end_of_DelayMs 14F6 0 CODE 0 text29 dist/default/production/flameSimulator.X.production.obj
+_TRISBbits 8D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of___ftadd F0A 0 CODE 0 text11 dist/default/production/flameSimulator.X.production.obj
+setPixel@colorR 2A 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_PORTBbits D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__size_of_setPixel 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_TRISFbits 30C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_T1CONbits 18 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_T2CONbits 1C 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+_TRISGbits 30D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+?___lbtoft 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+?___altoft 5C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+setTime@currentFieldValue 44 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+drawFrame@y 139 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+?___awtoft 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+frexp@eptr 23 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__pbssBIGRAM 2330 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__end_of_floor 187A 0 CODE 0 text7 dist/default/production/flameSimulator.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 3 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+___ftmul@exp 48 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 -
+__size_of_rand 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 -
+__end_of___lmul 2F98 0 CODE 0 text30 dist/default/production/flameSimulator.X.production.obj
+___ftdiv@exp 3E 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 ABS 0 bank6 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Lbank9 0 0 ABS 0 bank9 -
+__ptext1 10F8 0 CODE 0 text1 dist/default/production/flameSimulator.X.production.obj
+__ptext2 F0A 0 CODE 0 text2 dist/default/production/flameSimulator.X.production.obj
+__ptext3 1C42 0 CODE 0 text3 dist/default/production/flameSimulator.X.production.obj
+__end_of_HSVtoRGB 92A 0 CODE 0 text6 dist/default/production/flameSimulator.X.production.obj
+__ptext4 FCC 0 CODE 0 text4 dist/default/production/flameSimulator.X.production.obj
+_HSVtoRGB$1186 A0 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__ptext5 2E6C 0 CODE 0 text5 dist/default/production/flameSimulator.X.production.obj
+__ptext6 2A6 0 CODE 0 text6 dist/default/production/flameSimulator.X.production.obj
+__ptext7 1770 0 CODE 0 text7 dist/default/production/flameSimulator.X.production.obj
+_bitmapPutPixel 130A 0 CODE 0 text20 dist/default/production/flameSimulator.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__ptext8 1014 0 CODE 0 text8 dist/default/production/flameSimulator.X.production.obj
+__ptext9 187A 0 CODE 0 text9 dist/default/production/flameSimulator.X.production.obj
+__size_of___altoft 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_bitmapPutPixel 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__size_of_setTime 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_tickCounter 132 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+showTime@currentAnimationFrame E7 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__end_of__initialization 29E 0 CODE 0 cinit dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@vRGB AE 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__end_of___lbtoft 2E6C 0 CODE 0 text13 dist/default/production/flameSimulator.X.production.obj
+__size_of_DelayMs 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_OSCSTATbits 9A 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of_hueMask 2080 0 STRCODE 0 stringtext dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@vHSV 6D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_drawFrame 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of_frexp 1080 0 CODE 0 text8 dist/default/production/flameSimulator.X.production.obj
+___ftadd D1E 0 CODE 0 text11 dist/default/production/flameSimulator.X.production.obj
+frexp@value 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_setTime 92A 0 CODE 0 text19 dist/default/production/flameSimulator.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+___ftneg 1002 0 CODE 0 text14 dist/default/production/flameSimulator.X.production.obj
+_DelayMs 144A 0 CODE 0 text29 dist/default/production/flameSimulator.X.production.obj
+_shiftUp F0A 0 CODE 0 text2 dist/default/production/flameSimulator.X.production.obj
+___awmod 11EA 0 CODE 0 text27 dist/default/production/flameSimulator.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_hueMask 2000 0 STRCODE 0 stringtext dist/default/production/flameSimulator.X.production.obj
+__end_of_isr 242 0 CODE 0 intentry dist/default/production/flameSimulator.X.production.obj
+___ftpack@sign 24 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hspace_1 3E9 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+___ftadd@exp1 3D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_setup 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of_srand 2E12 0 CODE 0 text26 dist/default/production/flameSimulator.X.production.obj
+?___lmul 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+_seconds EF 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+setPixel@colorG 2B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Lspace_2 0 0 ABS 0 - -
+___fttol 187A 0 CODE 0 text9 dist/default/production/flameSimulator.X.production.obj
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hcinit 2A6 0 CODE 0 cinit -
+___ftmul 1ADA 0 CODE 0 text15 dist/default/production/flameSimulator.X.production.obj
+__Lcinit 246 0 CODE 0 cinit -
+___ftdiv 1988 0 CODE 0 text16 dist/default/production/flameSimulator.X.production.obj
+___awdiv 13A2 0 CODE 0 text21 dist/default/production/flameSimulator.X.production.obj
+_minutes ED 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@g 22 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__end_of_generateLine 2F38 0 CODE 0 text24 dist/default/production/flameSimulator.X.production.obj
+__size_of_generateLine 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_HSVtoRGB$1187 A3 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+_generateLine 2EEC 0 CODE 0 text24 dist/default/production/flameSimulator.X.production.obj
+___fttol@exp1 5B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__pcstackBANK2 134 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+___altoft@sign 63 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___awtoft@sign 2D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+DelayMs@cyclesRequiredForEntireDelay 2F 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+clear_ram0 2DDE 0 CODE 0 clrtext dist/default/production/flameSimulator.X.production.obj
+___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___ftadd@exp2 3C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__Lbank10 0 0 ABS 0 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__size_of___lbtoft 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Lbank13 0 0 BANK13 1 bank13 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__pbssBANK1 EA 0 BANK1 1 bssBANK1 dist/default/production/flameSimulator.X.production.obj
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+_timerTicks 12E 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+__pstringtext 2000 0 STRCODE 0 stringtext dist/default/production/flameSimulator.X.production.obj
+__ptext10 1080 0 CODE 0 text10 dist/default/production/flameSimulator.X.production.obj
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__ptext20 130A 0 CODE 0 text20 dist/default/production/flameSimulator.X.production.obj
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__ptext11 D1E 0 CODE 0 text11 dist/default/production/flameSimulator.X.production.obj
+__ptext30 2F38 0 CODE 0 text30 dist/default/production/flameSimulator.X.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__ptext21 13A2 0 CODE 0 text21 dist/default/production/flameSimulator.X.production.obj
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+drawFrame@colorRGB 13E 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+__end_of_rand 15A8 0 CODE 0 text25 dist/default/production/flameSimulator.X.production.obj
+__ptext12 1170 0 CODE 0 text12 dist/default/production/flameSimulator.X.production.obj
+__ptext31 2DD2 0 CODE 0 text31 dist/default/production/flameSimulator.X.production.obj
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__size_of_fastClock 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__ptext22 166A 0 CODE 0 text22 dist/default/production/flameSimulator.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__ptext13 2E36 0 CODE 0 text13 dist/default/production/flameSimulator.X.production.obj
+__Hbank18 0 0 BANK18 1 bank18 -
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+__Lbank18 0 0 BANK18 1 bank18 -
+_ADCON0bits 9D 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__ptext23 2F98 0 CODE 0 text23 dist/default/production/flameSimulator.X.production.obj
+__Hbank28 0 0 BANK28 1 bank28 -
+__size_of___awdiv 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Lbank28 0 0 BANK28 1 bank28 -
+__ptext14 1002 0 CODE 0 text14 dist/default/production/flameSimulator.X.production.obj
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__ptext24 2EEC 0 CODE 0 text24 dist/default/production/flameSimulator.X.production.obj
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__ptext15 1ADA 0 CODE 0 text15 dist/default/production/flameSimulator.X.production.obj
+__end_of_valueMask 2100 0 STRCODE 0 stringtext dist/default/production/flameSimulator.X.production.obj
+__ptext25 14F6 0 CODE 0 text25 dist/default/production/flameSimulator.X.production.obj
+__end_of_setTime D1E 0 CODE 0 text19 dist/default/production/flameSimulator.X.production.obj
+__ptext16 1988 0 CODE 0 text16 dist/default/production/flameSimulator.X.production.obj
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__ptext26 2DF6 0 CODE 0 text26 dist/default/production/flameSimulator.X.production.obj
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__ptext17 2EA8 0 CODE 0 text17 dist/default/production/flameSimulator.X.production.obj
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production/flameSimulator.X.production.obj
+floor@expon 6B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___awmod@divisor 33 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__ptext27 11EA 0 CODE 0 text27 dist/default/production/flameSimulator.X.production.obj
+__ptext18 15A8 0 CODE 0 text18 dist/default/production/flameSimulator.X.production.obj
+__ptext28 2E12 0 CODE 0 text28 dist/default/production/flameSimulator.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+___fttol@sign1 56 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__ptext19 92A 0 CODE 0 text19 dist/default/production/flameSimulator.X.production.obj
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production/flameSimulator.X.production.obj
+__ptext29 144A 0 CODE 0 text29 dist/default/production/flameSimulator.X.production.obj
+_FVRCONbits 117 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hend_init 246 0 CODE 0 end_init -
+__Lend_init 242 0 CODE 0 end_init -
+__pswtext1 2120 0 CONST 0 swtext1 dist/default/production/flameSimulator.X.production.obj
+showTime@currentPwmLevel E8 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___awdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__pswtext2 2138 0 CONST 0 swtext2 dist/default/production/flameSimulator.X.production.obj
+_currentRefreshingRow 7A 0 COMMON 1 bssCOMMON dist/default/production/flameSimulator.X.production.obj
+__pswtext3 2100 0 CONST 0 swtext3 dist/default/production/flameSimulator.X.production.obj
+__end_of_setup 3000 0 CODE 0 text23 dist/default/production/flameSimulator.X.production.obj
+__end_of___ftmul 1C42 0 CODE 0 text15 dist/default/production/flameSimulator.X.production.obj
+_HSVtoRGB$1188 A6 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@b C0 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+_HSVtoRGB 2A6 0 CODE 0 text6 dist/default/production/flameSimulator.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+drawFrame@x_731 138 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+drawFrame@colorHSV 13B 0 BANK2 1 cstackBANK2 dist/default/production/flameSimulator.X.production.obj
+__size_of_floor 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+HSVtoRGB@f A9 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+___altoft@exp 62 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+__end_of___awtoft 2EEC 0 CODE 0 text17 dist/default/production/flameSimulator.X.production.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+HSVtoRGB@g BD 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtY7dx9C.obj
+HSVtoRGB@h B8 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@colorHSV BC 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+drawFrame@pcnt CC 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+setPixel@colorB 2C 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@i AC 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+shiftUp@x_714 2A 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/flameSimulator.X.production.obj
+__end_of___wmul 2EA8 0 CODE 0 text5 dist/default/production/flameSimulator.X.production.obj
+start_initialization 246 0 CODE 0 cinit dist/default/production/flameSimulator.X.production.obj
+__end_of___altoft 11EA 0 CODE 0 text12 dist/default/production/flameSimulator.X.production.obj
+___awdiv@quotient 2D 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 127A 0 CODE 0 maintext dist/default/production/flameSimulator.X.production.obj
+__end_of___fttol 1988 0 CODE 0 text9 dist/default/production/flameSimulator.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+showTime@pcnt E9 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+setTime@changesMadeFlag 41 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@p C6 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__initialization 246 0 CODE 0 cinit dist/default/production/flameSimulator.X.production.obj
+__end_of___ftge 10F8 0 CODE 0 text10 dist/default/production/flameSimulator.X.production.obj
+generateLine@x 3B 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@q B2 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+___awmod@dividend 35 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@r AF 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+___lmul@product 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__HbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__LbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+___awmod@counter 38 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__size_of_bitmapClear 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__pbitbssCOMMON 3E8 -36B COMMON 1 bitbssCOMMON dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@s C3 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@i 27 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+HSVtoRGB@t B5 0 BANK1 1 cstackBANK1 dist/default/production/flameSimulator.X.production.obj
+bitmapPutPixel@y 20 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/flameSimulator.X.production.obj
+__end_of___ftdiv 1ADA 0 CODE 0 text16 dist/default/production/flameSimulator.X.production.obj
+__end_of_drawFrame 2000 0 CODE 0 text3 dist/default/production/flameSimulator.X.production.obj
+isr@currentRefreshingColumn 78 0 COMMON 1 cstackCOMMON dist/default/production/flameSimulator.X.production.obj
+_currentRefreshingColor 130 0 BANK2 1 bssBANK2 dist/default/production/flameSimulator.X.production.obj
+___awdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production/flameSimulator.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 620 30
+- 1 5A0 50
+- 1 530 40
+_bitmap 1 2330 0
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+intentry 0 4 8 7FC 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 50 1
+bssBANK3 1 1A0 1A0 40 1
+bssBANK2 1 120 120 21 1
+text3 0 E21 1C42 1DF 2
+text15 0 D6D 1ADA B4 2
+text16 0 CC4 1988 A9 2
+text9 0 C3D 187A 87 2
+text7 0 BB8 1770 85 2
+text22 0 B35 166A 83 2
+stringtext 0 1000 2000 80 2
+text18 0 AD4 15A8 61 2
+text25 0 A7B 14F6 59 2
+text29 0 A25 144A 56 2
+text21 0 9D1 13A2 54 2
+text20 0 985 130A 4C 2
+maintext 0 93D 127A 48 2
+text27 0 8F5 11EA 48 2
+text12 0 8B8 1170 3D 2
+text1 0 87C 10F8 3C 2
+text10 0 840 1080 3C 2
+text8 0 80A 1014 36 2
+text23 0 17CC 2F98 34 2
+text30 0 179C 2F38 30 2
+text24 0 1776 2EEC 26 2
+text17 0 1754 2EA8 22 2
+text5 0 1736 2E6C 1E 2
+text13 0 171B 2E36 1B 2
+text28 0 1709 2E12 12 2
+swtext3 0 1080 2100 28 2
+text26 0 16FB 2DF6 E 2
+clrtext 0 16EF 2DDE C 2
+text14 0 801 1002 9 2
+text31 0 16E9 2DD2 6 2
